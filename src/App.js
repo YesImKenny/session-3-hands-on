@@ -1,16 +1,37 @@
 import * as React from 'react'
 import * as ReactDOM from 'react-dom'
 
-// Comment out the below line and click Run to get started with this exercise
+// Comment out the below lines to create your functional component
 /*
-var reactElementWithoutJSX = React.createElement('div', { id: 'main' }, [
-    React.createElement('h1', { id: 'heading' }, 'Hello World')
-  ]);
+const FunctionalComponent = () => {
+   return (
+   <div className="main">
+      <h1 className="heading">Hello World from FunctionalComponent</h1>
+   </div>
+   )
+};
 */
 
-// Now that you have seen how to create an Element, try creating your own element and change the value in line 14 to our new variable
+// Comment out the below lines to create your class-based component
+/*
+class ClassComponent extends React.Component {
+	constructor(props) {
+  	super(props);
+  }
+  
+  render() {
+    return (
+      <div>
+          <div className="main">
+            <h1 className="heading">Hello World from ClassComponent</h1>
+          </div>
+      </div>
+    )
+  }
+}
+*/
 
 ReactDOM.render(
-  reactElementWithoutJSX,
+  <FunctionalComponent />,
   document.getElementById('root')
 );
