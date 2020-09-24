@@ -8,9 +8,10 @@ class Name extends React.Component {
   
   render() {
     // console.log(this.props);
+    const name = this.props.name;
     return (
        <div>
-          <p>{props.name}</p>
+          <p>{name}</p>
        </div>
     )
   }
