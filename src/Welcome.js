@@ -25,9 +25,11 @@ class Welcome extends React.Component {
   render() {
     // console.log(this.props);
     const welcome = this.props.welcome;
+    const tutor = this.props.tutor;
+    const course = this.props.course;
     return (
        <div>
-          <p>{welcome}</p>
+          <p>{welcome} to the {tutor} {course} party!</p>
        </div>
     )
   }
