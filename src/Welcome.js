@@ -9,12 +9,28 @@ You will create a functional component that accepts three props **welcome**, **t
 * Convert Welcome to a class-based component and try to render to the screen
 */
 
-const Welcome = (props) => {
-   return (
-     <div>
-        <h1>{props.welcome}</h1>
-     </div>
-   )
-};
+// const Welcome = (props) => {
+//    return (
+//      <div>
+//         <h1>{props.welcome}</h1>
+//      </div>
+//    )
+// };
+
+class Welcome extends React.Component {
+	constructor(props) {
+  	super(props);
+  }
+  
+  render() {
+    // console.log(this.props);
+    const welcome = this.props.welcome;
+    return (
+       <div>
+          <p>{welcome}</p>
+       </div>
+    )
+  }
+}
 
 export default Welcome;
