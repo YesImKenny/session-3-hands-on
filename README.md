@@ -1,17 +1,64 @@
-## React JS Hands-On Tutorials
+import * as React from 'react'
+import * as ReactDOM from 'react-dom'
 
+// Comment out the below lines to create your functional component
 
-## Hands-On 1
-In this hands-on exercise, we will be learning how JSX plays an important role in React Applications
-This exercise will contain 2 parts.
+// const FunctionalComponent = () => {
+//    return (
+//    <div className="main">
+//       <h1 className="heading">Hello World from FunctionalComponent</h1>
+//    </div>
+//    )
+// };
 
-### Part 1
-We will create a functional component
-Go to App.js file to start this exercise
-After learning how to create a functional component, create your own functional component and render it to the screen
+//Name 
+//City
 
-## Part 2
-We will create a class-based component
-Go to App.js file to start this exercise
-After learning how to create a class-based component, create your own class-based component and render it to the screen
- 
+// const NewFunctionalComponent = () => {
+//   return (
+//     <div className="main">
+//       <h1 className="name">Kenneth</h1>
+//       <h1 className="city">Oakland</h1>
+//     </div>
+//   )
+// }
+// Comment out the below lines to create your class-based component
+
+class ClassComponent extends React.Component {
+	constructor(props) {
+  	super(props);
+  }
+  
+  render() {
+    return (
+      <div>
+          <div className="main">
+            <h1 className="heading">Hello World from ClassComponent</h1>
+          </div>
+      </div>
+    )
+  }
+}
+
+class PersonalComponent extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    return (
+      <div>
+        <div className="main">
+          <h1 className="name">Kenneth</h1>
+          <h1 className="location">Oakland</h1>
+        </div>
+      </div>
+    )
+  }
+}
+
+ReactDOM.render(
+  <PersonalComponent />,
+  document.getElementById('root')
+);
+
